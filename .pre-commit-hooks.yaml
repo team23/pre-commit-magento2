@@ -1,0 +1,27 @@
+- id: php-cs
+  name: PHP Codesniffer
+  description: Run php codesniffer via b5 against all staged PHP files.
+  entry: pre_commit_hooks/php-cs.sh
+  language: script
+  files: \.(php|phtml|html)$
+
+- id: php-stan
+  name: PHPStan
+  description: Run PHPStan via b5 against all staged PHP files.
+  entry: pre_commit_hooks/php-stan.sh
+  language: script
+  files: \.php$
+
+- id: php-md
+  name: PHPMD
+  description: Run PHPMD via b5 against all staged PHP files.
+  entry: pre_commit_hooks/php-md.sh
+  language: script
+  files: \.php$
+
+- id: magento-eslint
+  name: ESLint
+  description: Run ESLint via b5 against all staged Javascript files.
+  entry: pre_commit_hooks/eslint.sh
+  language: script
+  files: \.js$

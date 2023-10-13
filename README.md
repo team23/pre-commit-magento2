@@ -7,7 +7,7 @@ Then create a `.pre-commit-config.yaml` in your project directory (on the same l
 # See https://pre-commit.com for more information
 # See https://pre-commit.com/hooks.html for more hooks
 repos:
-  - repo: https://github.com/team23/pre-commit-hooks-magento2-b5
+  - repo: https://github.com/team23/pre-commit-magento2
     rev: 'v1.0.0'
     hooks:
       - id: php-cs

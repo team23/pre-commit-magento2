@@ -25,3 +25,9 @@
   entry: pre_commit_hooks/eslint.sh
   language: script
   files: \.js$
+
+- id: git-commit-msg
+  name: Git Commit Message Hook
+  description: Checks if the commit msg meets the message criteria or not.
+  entry: pre_commit_hooks/git-commit-msg.sh
+  language: script
